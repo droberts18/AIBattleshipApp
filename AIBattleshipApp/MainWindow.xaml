@@ -1,0 +1,73 @@
+﻿<Window x:Class="AIBattleshipApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:wpfanimated="http://wpfanimatedgif.codeplex.com"
+        xmlns:local="clr-namespace:AIBattleshipApp"
+        mc:Ignorable="d"
+        Title="Battleship AI Project" Height="455.667" Width="739.667" Name="BattleshipWindow">
+
+    <Grid>
+        <Image wpfanimated:ImageBehavior.AnimatedSource="images/sea.gif"
+               wpfanimated:ImageBehavior.RepeatBehavior="1"
+               wpfanimated:ImageBehavior.AnimateInDesignMode="False"
+               wpfanimated:ImageBehavior.AutoStart="True" Margin="-17,0,-18,0" />
+        <Grid Name="aiUiBoard" Margin="50,61,402,64">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="10*" />
+                <ColumnDefinition Width="10*" />
+                <ColumnDefinition Width="10*" />
+                <ColumnDefinition Width="10*" />
+                <ColumnDefinition Width="10*" />
+                <ColumnDefinition Width="10*" />
+                <ColumnDefinition Width="10*" />
+                <ColumnDefinition Width="10*" />
+                <ColumnDefinition Width="10*" />
+                <ColumnDefinition Width="10*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="10*" />
+                <RowDefinition Height="10*" />
+                <RowDefinition Height="10*" />
+                <RowDefinition Height="10*" />
+                <RowDefinition Height="10*" />
+                <RowDefinition Height="10*" />
+                <RowDefinition Height="10*" />
+                <RowDefinition Height="10*" />
+                <RowDefinition Height="10*" />
+                <RowDefinition Height="10*" />
+            </Grid.RowDefinitions>
+        </Grid>
+
+        <Grid Name="userUiBoard" Margin="402,61,50,64">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="10*" />
+                <ColumnDefinition Width="10*" />
+                <ColumnDefinition Width="10*" />
+                <ColumnDefinition Width="10*" />
+                <ColumnDefinition Width="10*" />
+                <ColumnDefinition Width="10*" />
+                <ColumnDefinition Width="10*" />
+                <ColumnDefinition Width="10*" />
+                <ColumnDefinition Width="10*" />
+                <ColumnDefinition Width="10*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="10*" />
+                <RowDefinition Height="10*" />
+                <RowDefinition Height="10*" />
+                <RowDefinition Height="10*" />
+                <RowDefinition Height="10*" />
+                <RowDefinition Height="10*" />
+                <RowDefinition Height="10*" />
+                <RowDefinition Height="10*" />
+                <RowDefinition Height="10*" />
+                <RowDefinition Height="10*" />
+            </Grid.RowDefinitions>
+        </Grid>
+        <Label x:Name="label" Content="USER" HorizontalAlignment="Left" Margin="129,361,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.526,-1.5" FontSize="20" Foreground="White" Background="Black"/>
+        <Label x:Name="label1" Content="CPU" HorizontalAlignment="Left" Margin="534,361,0,0" VerticalAlignment="Top" FontSize="20" Foreground="White" Background="Black"/>
+        <Label x:Name="label2" Content="BATTLESHIP" HorizontalAlignment="Left" Margin="185,10,0,0" VerticalAlignment="Top" FontSize="30" Foreground="White" Width="358" HorizontalContentAlignment="Center"/>
+    </Grid>
+</Window>

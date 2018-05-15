@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CSProlog</name>
+    </assembly>
+    <members>
+        <member name="M:Prolog.PrologEngine.BaseTerm.Arg``1(System.Int32)">
+            <summary>Retrieves the argument value of a term </summary>
+        </member>
+        <member name="T:Prolog.Bootstrap">
+            <summary>
+            Contains the predefined predicates, also required to provide the Prolog engine with basic capabilities
+            </summary>
+        </member>
+    </members>
+</doc>
